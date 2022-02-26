@@ -1,0 +1,177 @@
+html, body{
+  /* why is there this height property? The website doesn't change below 100%. Only above 100%*/
+	height: 100%;
+}
+
+body{
+  /* The margin defines space around the element, outside of any defiend borders. */
+	margin: 0px;
+  /* Padding is used to create space around an element's content, inside of any defined borders. */
+	padding: 0px;
+  /* background color */
+	background: #FFFFFF;
+  /* Define font */
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Define font size */
+	font-size: 12pt;
+}
+
+/* Define properties for all headings*/
+h1, h2, h3{
+	margin: 0;
+	padding: 0;
+  background: #FFFFFF;
+	/*color: #404040;*/
+  color: #001234;
+}
+
+
+p, ol, ul{
+	margin-top: 0;
+}
+
+p {
+	line-height: 180%;
+}
+
+ol, ul{
+	padding: 0;
+	list-style: none;
+}
+
+.container{
+	/* Set width of container to
+		1200px and align center */
+	margin: 0px auto;
+	width: 1200px;
+}
+
+header{
+
+    overflow: hidden;
+}
+
+#top-header{
+
+	text-align: center;
+	height: 60px;
+}
+
+/*
+#logo{
+	float: left;
+	padding: none;
+	margin: none;
+	height: 60px;
+	width: 30%;
+}
+
+#logo img{
+	width: 60%;
+	float: left;
+	padding: 10px 0px;
+}
+*/
+
+#menu{
+	float: center;
+	width: 70%;
+	height: 100%;
+	margin: auto;
+}
+
+#menu ul{
+	text-align: center;
+	float: center;
+	margin: none;
+	background: #FFFFFF;
+}
+
+#menu li{
+	display: inline-block;
+	padding: none;
+	margin: none;
+}
+
+#menu li a, #menu li span{
+	display: inline-block;
+	padding: 0em 1.5em;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: lowercase;
+	line-height: 60px;
+}
+
+#menu li a{
+
+	color: #000000;
+}
+
+#menu li:hover a, #menu li span{
+	background: #FFF;
+	color: #333333;
+	/* border-left: 1px solid #0074D9; */
+	text-decoration: none;
+}
+
+
+#body-image{
+	float: right;
+  position: relative;
+  top: 80px;
+	margin: auto;
+	/*height: 32%;*/
+	/*width: 60%;*/
+}
+
+#body-image img{
+	max-width: 56%;
+  height: auto;
+	float: right;
+  margin: none;
+  padding: none;
+}
+
+
+#image-text{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    color: #000;
+    transform: translate(-30%, -30%);
+    text-align: left;
+    font-size: 3em;
+}
+
+
+.copyright
+{
+    /*overflow: hidden;*/
+    padding: 3em 0em;
+    border-top: 700px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    background: #fff;
+}
+
+
+.copyright p
+{
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: #000;
+}
+
+#contact li{
+  display: inline-block;
+	text-align: center;
+	margin: auto;
+	background: #fff;
+  padding: 0em 0.3em;
+}
+
+
+.copyright a
+{
+    text-decoration: none;
+    color: #000;
+}
