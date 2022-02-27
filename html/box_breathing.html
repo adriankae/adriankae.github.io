@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="application/javascript" src="../js/box_breathing_code.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/box_breathing_style.css">
+	<title>Box Breathing Timer</title>
+</head>
+<body>
+  <audio id="ding1" src="/Users/adrian/Documents/boxbreathing/sound/ding1.mp3"></audio>
+  <h1 id="title">Box Breathing Timer</h1>
+
+  <div class="grid-container">
+    <div class="item1" id="item1">
+      <span id="action_header"> </span>
+    </div>
+    <!-- Menu div -->
+    <div class="item2">
+      <h3>Settings</h3>
+      <form>
+        <label for="breathing_interval">Breathing Interval:</label> <br>
+        <input type="number" id="breathing_interval" name="breathing_interval" min="1" max="15" step="1" value = "4" ><br><br>
+        <label for="session_time">Session Time in Minutes:</label> <br>
+        <input type="number" id="session_time" name="session_time" min="1" max="240" step="1" value = "5" >
+      </form>
+    </div>
+    <div class="item3">
+      <span id="main_timer">4</span>
+    </div>
+    <div class="item4">
+      <p>Elapsed:</p>
+      <span id="elapsed_timer">0h 0m 0s</span>
+    </div>
+
+    <!-- Rest timer div -->
+    <div class="item5">
+      <p>Session Time:</p>
+      <span id="rest_timer">0h 0m 0s</span>
+    </div>
+    <div class="item6">
+      <!-- <input type="button" class="button" id="start_pause_button" value="Start"> -->
+      <button class="button" id="start_pause_button" onclick="startTimer()">
+        <span id="start_pause_span">Start</span>
+      </button>
+    </div>
+    <div class="item7">
+      <button class="button" id="reset_button" onclick="reset()">Reset</button>
+    </div>
+  </div>
+
+  <!-- <div id="intervall_name_div">
+    <h2 id="intervall_name">breath</h2>
+  </div>
+
+  <div id="timer_div">
+
+    <div class="timer" id="current_div">
+      <p>This is the current timer.</p>
+    </div>
+    <div class="timer" id="elapsed_div">
+      <p>elapsed timer.</p>
+    </div>
+    <div class="timer" id="rest_div">
+      <p>rest timer.</p>
+    </div>
+  </div>
+
+  <div id="button_div">
+    <div id="start_div">
+
+    </div>
+
+    <div id="reset_div">
+
+    </div>
+  </div> -->
+</body>
+
+</html>
