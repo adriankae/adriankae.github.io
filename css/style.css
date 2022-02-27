@@ -1,4 +1,4 @@
-/* html, body{
+html, body{
   /* why is there this height property? The website doesn't change below 100%. Only above 100%*/
 	height: 100%;
 }
