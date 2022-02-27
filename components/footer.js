@@ -41,12 +41,17 @@ class Footer extends HTMLElement {
         <div class="copyright">
             <ul id="contact">
                 <li>
-                    <a href="#" class="fa fa-linkedin">
+                    <a href="https://www.linkedin.com/in/käsdorf" class="fa fa-linkedin">
 
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="fa fa-youtube">
+                    <a href="https://www.youtube.com/channel/UCAvLk6PxSQpaXetA7ZCIqAQ" class="fa fa-youtube">
+
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCD5uqdFWEVQXAjGpeJdnoaQ" class="fa fa-youtube">
 
                     </a>
                 </li>
