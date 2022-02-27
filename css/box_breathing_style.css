@@ -43,7 +43,7 @@ html, body{
 .grid-container > div {
   background-color: rgba(255, 255, 255, 1);
   text-align: center;
-  padding: 30px 0;
+  padding: 25px 0;
   font-size: 30px;
 }
 
@@ -68,9 +68,10 @@ html, body{
 
 #header-menu{
 	float: center;
-	/* width: 70%;
-	height: 100%; */
+	width: 70%;
+	height: 100%;
 	margin: auto;
+  font-size: 12pt;
 }
 
 #header-menu ul{
