@@ -11,9 +11,11 @@ html, body{
 
 .item1 {
   grid-area: header;
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 .item2 {
   grid-area: menu;
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 .item3 { grid-area: main; }
 .item4 { grid-area: elapsed; }
@@ -33,7 +35,7 @@ html, body{
     'menu main main main main'
     'menu elapsed elapsed rest rest'
     'menu start start reset reset';
-  gap: 1px;
+  /* gap: 1px; */
   /* background-color: #2196F3; */
   background-color: rgba(255, 255, 255, 1);
   padding: 1px;
@@ -43,6 +45,7 @@ html, body{
 .grid-container > div {
   background-color: rgba(255, 255, 255, 1);
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 25px 0;
   font-size: 30px;
 }
