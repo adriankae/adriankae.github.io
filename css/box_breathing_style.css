@@ -3,33 +3,21 @@ html, body{
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-#title{
-  text-align: center;
-  color: black;
-}
-
-
 .item1 {
   grid-area: header;
-  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 .item2 {
   grid-area: menu;
-  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 .item3 { grid-area: main; }
 .item4 { grid-area: elapsed; }
 .item5 { grid-area: rest; }
 .item6 { grid-area: start; }
 .item7 { grid-area: reset; }
-.item8 {
-  grid-area: top-header;
-}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'top-header top-header top-header top-header top-header'
     'menu header header header header'
     'menu main main main main'
     'menu main main main main'
@@ -69,7 +57,7 @@ html, body{
   transform: translateY(2px);
 }
 
-#header-menu{
+/* #header-menu{
 	float: center;
 	width: 70%;
 	height: 100%;
@@ -106,6 +94,6 @@ html, body{
 #header-menu li:hover a, #header-menu li span{
 	background: #FFF;
 	color: #333333;
-	/* border-left: 1px solid #0074D9; */
+	/* border-left: 1px solid #0074D9;
 	text-decoration: none;
-}
+} */

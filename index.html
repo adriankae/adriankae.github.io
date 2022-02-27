@@ -5,55 +5,46 @@
         <meta name="author" content="Adrian Käsdorf">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="components/header.js" type="text/javascript" defer></script>
         <title>Adrian Kaesdorf</title>
     </head>
     <body>
 
-      <div class="grid-container">
-        <div class="grid-item">
-          <div id="top-header">
-            <nav id="header-menu">
-              <ul>
-                  <li class="active"><a href=https://adriankae.github.io/>home.</a></li>
-                  <li><a href=#>about.</a></li>
-                  <li><a href=#>cv.</a></li>
-                  <li><a href=https://adriankae.github.io/html/box_breathing.html>boxbreathing.</a></li>
-                  <li><a href=#>portfolio.</a></li>
-                  <li><a href=#>contact.</a></li>
-              </ul>
-            </nav>
+      <!-- adding the header component -->
+      <header-component></header-component>
+      
+      <main>
+        <div class="grid-container">
+
+          <div class="grid-item">
+            <div id="picture">
+                <img src="images/logo_me.png" style="width:100%;">
+                <h2 id = "image-text">
+                hi.
+                </h2>
+            </div>
           </div>
+          <div class="grid-item">
+            <div class="copyright">
+                <ul id="contact">
+                    <li>
+                        <a href="#" class="fa fa-linkedin">
 
-        </div>
-        <div class="grid-item">
-          <div id="picture">
-              <img src="images/logo_me.png" style="width:100%;">
-              <h2 id = "image-text">
-              hi.
-              </h2>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="copyright">
-              <ul id="contact">
-                  <li>
-                      <a href="#" class="fa fa-linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-youtube">
 
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" class="fa fa-youtube">
-
-                      </a>
-                  </li>
-              </ul>
-              <p>
-                  © All rights reserved | Adrian Käsdorf
-              </p>
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    © All rights reserved | Adrian Käsdorf
+                </p>
+            </div>
           </div>
         </div>
-      </div>
 
-
+      </main>
     </body>
 </html>

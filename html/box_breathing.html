@@ -4,88 +4,55 @@
   <script type="application/javascript" src="../js/box_breathing_code.js"></script>
   <link rel="stylesheet" type="text/css" href="../css/box_breathing_style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../components/header.js" type="text/javascript" defer></script>
 	<title>Box Breathing Timer</title>
 </head>
 <body>
-  <audio id="ding1" src="https://github.com/adriankae/adriankae.github.io/blob/main/sound/ding1.mp3"></audio>
 
-  <div class="grid-container">
-    <div class="item8" id="item8" style="padding: 0px 0; padding-bottom: 4em; border: 0px solid rgba(0, 0, 0, 0.8);">
-      <nav id="header-menu">
-        <ul>
-            <li class="active"><a href=https://adriankae.github.io/>home.</a></li>
-            <li><a href=#>about.</a></li>
-            <li><a href=#>cv.</a></li>
-            <li><a href=https://adriankae.github.io/html/box_breathing.html>boxbreathing.</a></li>
-            <li><a href=#>portfolio.</a></li>
-            <li><a href=#>contact.</a></li>
-        </ul>
-      </nav>
-    </div>
+  <!-- adding the header component -->
+  <header-component></header-component>
 
-    <div class="item1" id="item1">
-      <span id="action_header"> </span>
-    </div>
-    <!-- Menu div -->
-    <div class="item2">
-      <h3>Settings</h3>
-      <form>
-        <label for="breathing_interval">Breathing Interval:</label> <br>
-        <input type="number" id="breathing_interval" name="breathing_interval" min="1" max="15" step="1" value = "4" ><br><br>
-        <label for="session_time">Session Time in Minutes:</label> <br>
-        <input type="number" id="session_time" name="session_time" min="1" max="240" step="1" value = "5" >
-      </form>
-    </div>
-    <div class="item3">
-      <span id="main_timer">4</span>
-    </div>
-    <div class="item4">
-      <p>Elapsed:</p>
-      <span id="elapsed_timer">0h 0m 0s</span>
-    </div>
+  <main>
+    <audio id="ding1" src="https://github.com/adriankae/adriankae.github.io/blob/main/sound/ding1.mp3"></audio>
+    <div class="grid-container">
 
-    <!-- Rest timer div -->
-    <div class="item5">
-      <p>Session Time:</p>
-      <span id="rest_timer">0h 0m 0s</span>
-    </div>
-    <div class="item6">
-      <!-- <input type="button" class="button" id="start_pause_button" value="Start"> -->
-      <button class="button" id="start_pause_button" onclick="startTimer()">
-        <span id="start_pause_span">Start</span>
-      </button>
-    </div>
-    <div class="item7">
-      <button class="button" id="reset_button" onclick="reset()">Reset</button>
-    </div>
-  </div>
+      <div class="item1" id="item1">
+        <span id="action_header"> </span>
+      </div>
+      <!-- Menu div -->
+      <div class="item2">
+        <h3>Settings</h3>
+        <form>
+          <label for="breathing_interval">Breathing Interval:</label> <br>
+          <input type="number" id="breathing_interval" name="breathing_interval" min="1" max="15" step="1" value = "4" ><br><br>
+          <label for="session_time">Session Time in Minutes:</label> <br>
+          <input type="number" id="session_time" name="session_time" min="1" max="240" step="1" value = "5" >
+        </form>
+      </div>
+      <div class="item3">
+        <span id="main_timer">4</span>
+      </div>
+      <div class="item4">
+        <p>Elapsed:</p>
+        <span id="elapsed_timer">0h 0m 0s</span>
+      </div>
 
-  <!-- <div id="intervall_name_div">
-    <h2 id="intervall_name">breath</h2>
-  </div>
-
-  <div id="timer_div">
-
-    <div class="timer" id="current_div">
-      <p>This is the current timer.</p>
+      <!-- Rest timer div -->
+      <div class="item5">
+        <p>Session Time:</p>
+        <span id="rest_timer">0h 0m 0s</span>
+      </div>
+      <div class="item6">
+        <!-- <input type="button" class="button" id="start_pause_button" value="Start"> -->
+        <button class="button" id="start_pause_button" onclick="startTimer()">
+          <span id="start_pause_span">Start</span>
+        </button>
+      </div>
+      <div class="item7">
+        <button class="button" id="reset_button" onclick="reset()">Reset</button>
+      </div>
     </div>
-    <div class="timer" id="elapsed_div">
-      <p>elapsed timer.</p>
-    </div>
-    <div class="timer" id="rest_div">
-      <p>rest timer.</p>
-    </div>
-  </div>
-
-  <div id="button_div">
-    <div id="start_div">
-
-    </div>
-
-    <div id="reset_div">
-
-    </div>
-  </div> -->
+  </main>
 </body>
 
 </html>

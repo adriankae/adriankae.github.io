@@ -54,7 +54,7 @@ h1, h2, h3{
 }
 
 
-p, ol, ul{
+p{
 	margin-top: 0;
 }
 
@@ -62,58 +62,12 @@ p {
 	line-height: 180%;
 }
 
-ol, ul{
+/* ol, ul{
 	padding: 0;
 	list-style: none;
-}
+} */
 
 
-#top-header{
-
-	/* text-align: center; */
-	/* height: 60px; */
-}
-
-#header-menu{
-	float: center;
-	/* width: 70%;
-	height: 100%; */
-	margin: auto;
-}
-
-#header-menu ul{
-	text-align: center;
-	float: center;
-	margin: none;
-	background: #FFFFFF;
-}
-
-#header-menu li{
-	display: inline-block;
-	padding: none;
-	margin: none;
-}
-
-#header-menu li a, #header-menu li span{
-	display: inline-block;
-	padding: 0em 1.5em;
-	text-decoration: none;
-	font-weight: 600;
-	text-transform: lowercase;
-	line-height: 60px;
-}
-
-#header-menu li a{
-
-	color: #000000;
-}
-
-#header-menu li:hover a, #header-menu li span{
-	background: #FFF;
-	color: #333333;
-	/* border-left: 1px solid #0074D9; */
-	text-decoration: none;
-}
 
 
 #picture{

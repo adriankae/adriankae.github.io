@@ -2,41 +2,78 @@ class Header extends HTMLElement {
   constructor() {
     super();
   }
-}
 
-connectedCallback() {
+  connectedCallback() {
     this.innerHTML = `
       <style>
-        nav {
-          height: 40px;
+        /* nav {
+          height: 80px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background-color:  #0a0a23;
         }
 
-        ul {
-          padding: 0;
+        p {
+        	line-height: 180%;
         }
 
-        a {
-          font-weight: 700;
-          margin: 0 25px;
-          color: #fff;
-          text-decoration: none;
+        ol, ul{
+          margin-top: 0;
+        	padding: 0;
+        	list-style: none;
+        }
+        */
+        #header-menu{
+        	float: center;
+          font-size: 12pt;
+        	/* width: 70%;
+        	height: 100%; */
+        	margin: auto;
         }
 
-        a:hover {
-          padding-bottom: 5px;
-          box-shadow: inset 0 -2px 0 0 #fff;
+        #header-menu ul{
+        	text-align: center;
+        	float: center;
+        	margin: none;
+        	background: #FFFFFF;
         }
+
+        #header-menu li{
+        	display: inline-block;
+        	padding: none;
+        	margin: none;
+        }
+
+        #header-menu li a, #header-menu li span{
+        	display: inline-block;
+        	padding: 0em 1.5em;
+        	text-decoration: none;
+        	font-weight: 600;
+        	text-transform: lowercase;
+        	line-height: 60px;
+        }
+
+        #header-menu li a{
+
+        	color: #000000;
+        }
+
+        #header-menu li:hover a, #header-menu li span{
+        	background: #FFF;
+        	color: #333333;
+        	text-decoration: none;
+        }
+
       </style>
       <header>
-        <nav>
+        <nav id="header-menu">
           <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
+              <li class="active"><a href=https://adriankae.github.io/>home.</a></li>
+              <li><a href=#>about.</a></li>
+              <li><a href=#>cv.</a></li>
+              <li><a href=https://adriankae.github.io/html/box_breathing.html>boxbreathing.</a></li>
+              <li><a href=#>portfolio.</a></li>
+              <li><a href=#>contact.</a></li>
           </ul>
         </nav>
       </header>
