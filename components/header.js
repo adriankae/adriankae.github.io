@@ -59,11 +59,11 @@ class Header extends HTMLElement {
         <nav id="header-menu">
           <ul>
               <li class="active"><a href=https://adriankae.github.io/>home.</a></li>
-              <li><a href=#>about.</a></li>
-              <li><a href=#>cv.</a></li>
+              <!-- <li><a href=#>about.</a></li>
+              <li><a href=#>cv.</a></li> -->
               <li><a href=https://adriankae.github.io/html/box_breathing.html>boxbreathing.</a></li>
-              <li><a href=#>portfolio.</a></li>
-              <li><a href=#>contact.</a></li>
+              <!-- <li><a href=#>portfolio.</a></li>
+              <li><a href=#>contact.</a></li> -->
           </ul>
         </nav>
       </header>
