@@ -1,5 +1,6 @@
-body{
+html, body{
   background: white;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #title{
