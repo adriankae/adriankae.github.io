@@ -12,16 +12,6 @@ class Header extends HTMLElement {
           align-items: center;
           justify-content: center;
         }
-
-        p {
-        	line-height: 180%;
-        }
-
-        ol, ul{
-          margin-top: 0;
-        	padding: 0;
-        	list-style: none;
-        }
         */
         #header-menu{
         	float: center;
