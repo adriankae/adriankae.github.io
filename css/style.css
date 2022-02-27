@@ -1,4 +1,4 @@
-html, body{
+/* html, body{
   /* why is there this height property? The website doesn't change below 100%. Only above 100%*/
 	height: 100%;
 }
@@ -15,6 +15,34 @@ body{
   /* Define font size */
 	font-size: 12pt;
 }
+
+
+/* grid definition*/
+.item1 { grid-area: header-menu; }
+.item2 { grid-area: picture; }
+.item3 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  /* grid-template-areas:
+    'header-menu'
+    'picture'
+    'footer'
+  gap: 1px; */
+  /* background-color: #2196F3; */
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0px;
+  grid-template-columns: auto;
+}
+
+/* .grid-container > div {
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 0px 0;
+  font-size: 30px;
+} */
+
+/* grid definition end*/
 
 /* Define properties for all headings*/
 h1, h2, h3{
@@ -39,61 +67,34 @@ ol, ul{
 	list-style: none;
 }
 
-.container{
-	/* Set width of container to
-		1200px and align center */
-	margin: 0px auto;
-	width: 1200px;
-}
-
-header{
-
-    overflow: hidden;
-}
 
 #top-header{
 
-	text-align: center;
-	height: 60px;
+	/* text-align: center; */
+	/* height: 60px; */
 }
 
-/*
-#logo{
-	float: left;
-	padding: none;
-	margin: none;
-	height: 60px;
-	width: 30%;
-}
-
-#logo img{
-	width: 60%;
-	float: left;
-	padding: 10px 0px;
-}
-*/
-
-#menu{
+#header-menu{
 	float: center;
-	width: 70%;
-	height: 100%;
+	/* width: 70%;
+	height: 100%; */
 	margin: auto;
 }
 
-#menu ul{
+#header-menu ul{
 	text-align: center;
 	float: center;
 	margin: none;
 	background: #FFFFFF;
 }
 
-#menu li{
+#header-menu li{
 	display: inline-block;
 	padding: none;
 	margin: none;
 }
 
-#menu li a, #menu li span{
+#header-menu li a, #header-menu li span{
 	display: inline-block;
 	padding: 0em 1.5em;
 	text-decoration: none;
@@ -102,12 +103,12 @@ header{
 	line-height: 60px;
 }
 
-#menu li a{
+#header-menu li a{
 
 	color: #000000;
 }
 
-#menu li:hover a, #menu li span{
+#header-menu li:hover a, #header-menu li span{
 	background: #FFF;
 	color: #333333;
 	/* border-left: 1px solid #0074D9; */
@@ -115,7 +116,7 @@ header{
 }
 
 
-#body-image{
+#picture{
 	float: right;
   position: relative;
   top: 80px;
@@ -124,8 +125,8 @@ header{
 	/*width: 60%;*/
 }
 
-#body-image img{
-	max-width: 56%;
+#picture img{
+	max-width: 60%;
   height: auto;
 	float: right;
   margin: none;
@@ -146,9 +147,8 @@ header{
 
 .copyright
 {
-    /*overflow: hidden;*/
-    padding: 3em 0em;
-    border-top: 700px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    padding: 6em 0em;
     text-align: center;
     background: #fff;
 }
