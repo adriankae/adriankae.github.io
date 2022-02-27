@@ -16,6 +16,7 @@ html, body{
 .item7 { grid-area: reset; }
 
 .grid-container {
+  margin-top: 50px;
   display: grid;
   grid-template-areas:
     'menu header header header header'
@@ -56,44 +57,3 @@ html, body{
   box-shadow: 0 2px #666;
   transform: translateY(2px);
 }
-
-/* #header-menu{
-	float: center;
-	width: 70%;
-	height: 100%;
-	margin: auto;
-  font-size: 12pt;
-}
-
-#header-menu ul{
-	text-align: center;
-	float: center;
-	margin: none;
-	background: #FFFFFF;
-}
-
-#header-menu li{
-	display: inline-block;
-	padding: none;
-	margin: none;
-}
-
-#header-menu li a, #header-menu li span{
-	display: inline-block;
-	padding: 0em 1.5em;
-	text-decoration: none;
-	font-weight: 600;
-	text-transform: lowercase;
-}
-
-#header-menu li a{
-
-	color: #000000;
-}
-
-#header-menu li:hover a, #header-menu li span{
-	background: #FFF;
-	color: #333333;
-	/* border-left: 1px solid #0074D9;
-	text-decoration: none;
-} */
