@@ -159,6 +159,8 @@ function updateSessionTime(){
 }
 
 function play() {
-  var audio = document.getElementById("ding1");
-  audio.play();
+  if (document.getElementById("sounds").value == "ding") {
+    var audio = document.getElementById("ding1");
+    audio.play();
+  }
 }
