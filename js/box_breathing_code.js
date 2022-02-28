@@ -37,6 +37,7 @@ function startTimer() {
       }
       // set the main timer
       console.log("timeleft is: " + timeleft);
+      console.log("session_time is: " + session_time);
       document.getElementById("main_timer").innerHTML = timeleft;
 
       // set the action header
@@ -59,10 +60,14 @@ function startTimer() {
       if (session_time == 0){
         updateSessionTime();
         updateElapsedTime();
+        document.getElementById("main_timer").innerHTML = timeleft;
+        console.log("updated both timers");
+        display_message = true;
         clearInterval(breathing_function);
-        if (Math.random() < 0.8) {
-          alert("Congratulations.\nSo good, that you care for your body and mind!");
-        }
+        console.log("cleared breathing_function");
+        // if (Math.random() < 0.8) {
+        //   alert("Congratulations.\nSo good, that you care for your body and mind!");
+        // }
       }
 
       if (timeleft < 1) {
@@ -144,10 +149,13 @@ function updateSessionTime(){
   session_time_hours = Math.floor((session_time % (60 * 60 * 24)) / (60 * 60));
   session_time_minutes = Math.floor((session_time % (60 * 60)) / (60));
   session_time_seconds = Math.floor(session_time % (60));
+  console.log("session_time is within updateSessionTime(): " + session_time);
+  console.log("session_time_seconds is within updateSessionTime(): " + session_time_seconds);
 
   rest_timer_string = session_time_hours + "h " + session_time_minutes + "m " + session_time_seconds + "s";
 
   document.getElementById("rest_timer").innerHTML = rest_timer_string;
+  console.log("rest_timer_string is: " + rest_timer_string);
 }
 
 function play() {
