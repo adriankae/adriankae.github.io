@@ -5,12 +5,9 @@ html, body{
 /* project-section */
 
 .project-section{
-    width: 100%;
     padding-left: 50px;
     padding-top: 60px;
     top: 0;
-    transition: 0.5s;
-    opacity: 1;
 }
 
 
@@ -24,7 +21,8 @@ html, body{
 
 .project-container{
     display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
+    /* grid-template-columns: repeat(2, 0.5fr); */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     row-gap: 100px;
     width: 100vw;
     margin:auto;
