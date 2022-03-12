@@ -62,9 +62,10 @@ class Header extends HTMLElement {
               <!-- <li><a href=#>about.</a></li>
               <li><a href=#>cv.</a></li> -->
               <li><a href=https://adriankae.github.io/html/box_breathing.html>boxbreathing.</a></li>
-              <!-- <li><a href=#>portfolio.</a></li>
-              <li><a href=#>contact.</a></li> -->
+              <!-- <li><a href=#>portfolio.</a></li> -->
+
               <li><a href=https://adriankae.github.io/html/touren.html>bergtouren.</a></li>
+              <li><a href=#>contact.</a></li>
           </ul>
         </nav>
       </header>

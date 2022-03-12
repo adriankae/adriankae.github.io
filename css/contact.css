@@ -1,0 +1,42 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.contact-section{
+  position: relative;
+  top: 0;
+  /* opacity: 0; */
+  transition: 1s;
+  padding: 70px 150px;
+  /* height: 100vh; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 50px;
+}
+
+.contact-form input, .contact-form textarea{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #000;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background: #eeeeee;
+  padding: 5px 10px;
+}
+
+#msg{
+  height: 280px
+  /* resize: none; */
+}
+
+.form-submit-btn{
+  /* color: #000000; */
+  text-transform: capitalize;
+  padding: 10px 30px;
+  display: block;
+  margin: auto;
+  /* border: none; */
+  border-radius: 10px;
+  cursor: pointer;
+}
