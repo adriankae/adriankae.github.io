@@ -16,7 +16,7 @@
   <header-component></header-component>
 
   <section class="contact-section">
-    <form class="contact-form">
+    <form class="contact-form" onsubmit="return ajaxpost()">
       <input type="text" name="name" id="name" autocomplete="off" placeholder="Name">
       <input type="text" name="email" id="email" autocomplete="off" placeholder="Email">
       <textarea name="msg" id="msg" autocomplete="off" placeholder="Messsage"></textarea>
