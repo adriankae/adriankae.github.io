@@ -76,7 +76,7 @@ function startTimer() {
       if (timeleft < 1) {
         timeleft = box_interval;
       }
-    },500);
+    },1000);
   } else {
     clearInterval(breathing_function);
   }
