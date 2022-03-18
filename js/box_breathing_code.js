@@ -9,6 +9,7 @@ var seconds = 0;
 var breathing_function;
 var stop_flag = false;
 var session_time;
+var first_time_flag = true;
 
 
 function startTimer() {
@@ -16,7 +17,9 @@ function startTimer() {
   //document.getElementById('start_pause_button').onclick = null;
   console.log("startTimer() has been called")
 
-  setValues();
+  if (first_time_flag) {
+    setValues();
+  }
   console.log("box_interval after setValues() is: " + box_interval);
   console.log(" after setValues() is: " + box_interval);
 
@@ -35,6 +38,20 @@ function startTimer() {
         clearInterval(breathing_function);
         return;
       }
+      // check if session_time is 0 at the beginning, if so terminate
+      if (session_time == 0){
+        updateSessionTime();
+        updateElapsedTime();
+        document.getElementById("main_timer").innerHTML = timeleft;
+        console.log("updated both timers");
+        display_message = true;
+        clearInterval(breathing_function);
+        console.log("cleared breathing_function");
+        // if (Math.random() < 0.8) {
+        //   alert("Congratulations.\nSo good, that you care for your body and mind!");
+        // }
+      }
+
       // set the main timer
       console.log("timeleft is: " + timeleft);
       console.log("session_time is: " + session_time);
@@ -48,27 +65,13 @@ function startTimer() {
       }
 
       updateElapsedTime();
+      updateSessionTime();
 
       // increase elapsed time
       time_elpased += 1;
       timeleft -= 1;
       session_time -= 1;
 
-      updateSessionTime();
-
-
-      if (session_time == 0){
-        updateSessionTime();
-        updateElapsedTime();
-        document.getElementById("main_timer").innerHTML = timeleft;
-        console.log("updated both timers");
-        display_message = true;
-        clearInterval(breathing_function);
-        console.log("cleared breathing_function");
-        // if (Math.random() < 0.8) {
-        //   alert("Congratulations.\nSo good, that you care for your body and mind!");
-        // }
-      }
 
       if (timeleft < 1) {
         timeleft = box_interval;
@@ -96,6 +99,7 @@ function updateElapsedTime(){
 }
 
 function setValues(){
+  first_time_flag = false;
   console.log("setValues() has been called");
   box_interval = document.getElementById("breathing_interval").value;
   console.log("Assigned user input to variable box_interval");
