@@ -52,10 +52,10 @@ function startTimer() {
       // increase elapsed time
       time_elpased += 1;
       timeleft -= 1;
-
+      session_time -= 1;
 
       updateSessionTime();
-      session_time -= 1;
+
 
       if (session_time == 0){
         updateSessionTime();
@@ -73,7 +73,7 @@ function startTimer() {
       if (timeleft < 1) {
         timeleft = box_interval;
       }
-    },1000);
+    },500);
   } else {
     clearInterval(breathing_function);
   }
