@@ -45,6 +45,7 @@ function startTimer() {
         document.getElementById("main_timer").innerHTML = timeleft;
         console.log("updated both timers");
         display_message = true;
+        play();
         clearInterval(breathing_function);
         console.log("cleared breathing_function");
         // if (Math.random() < 0.8) {
