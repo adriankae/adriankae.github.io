@@ -65,7 +65,7 @@ class Header extends HTMLElement {
               <!-- <li><a href=#>portfolio.</a></li> -->
 
               <li><a href=https://adriankae.github.io/html/touren.html>bergtouren.</a></li>
-              <li><a href=#>contact.</a></li>
+              <li><a href=https://adriankae.github.io/html/contact.html>contact.</a></li>
           </ul>
         </nav>
       </header>
