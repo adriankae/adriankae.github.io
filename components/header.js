@@ -64,7 +64,7 @@ class Header extends HTMLElement {
               <li><a href=https://adriankaesdorf.de/box_breathing.html>boxbreathing.</a></li>
               <!-- <li><a href=#>portfolio.</a></li> -->
 
-              <li><a href=https://adriankaesdorf.de/touren>bergtouren.</a></li>
+              <li><a href=https://adriankaesdorf.de/touren.html>bergtouren.</a></li>
               <li><a href=https://adriankaesdorf.de/contact.html>contact.</a></li>
           </ul>
         </nav>
