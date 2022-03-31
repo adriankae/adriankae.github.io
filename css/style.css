@@ -17,33 +17,6 @@ body{
 }
 
 
-/* grid definition*/
-.item1 { grid-area: header-menu; }
-.item2 { grid-area: picture; }
-.item3 { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-	grid-template-columns: repeat(1, 2fr);
-  /* grid-template-areas:
-    'header-menu'
-    'picture'
-  gap: 1px; */
-  /* background-color: #2196F3; */
-  background-color: rgba(255, 255, 255, 1);
-  padding: 0px;
-  grid-template-columns: auto;
-}
-
-/* .grid-container > div {
-  background-color: rgba(255, 255, 255, 1);
-  text-align: center;
-  padding: 0px 0;
-  font-size: 30px;
-} */
-
-/* grid definition end*/
-
 /* Define properties for all headings*/
 h1, h2, h3{
 	margin: 0;
@@ -62,7 +35,7 @@ h1, h2, h3{
 }
 
 .header .image{
-	width: 60%;
+	max-width: 50%;
 	float: right;
 	margin-left: auto;
 }
@@ -71,23 +44,4 @@ h1, h2, h3{
   display:flex;
   align-items:center;
 	margin-top: 80px;
-}
-
-
-
-#picture{
-	float: right;
-  position: relative;
-  top: 80px;
-	margin: auto;
-	/*height: 32%;*/
-	/*width: 60%;*/
-}
-
-#picture img{
-	max-width: 60%;
-  height: auto;
-	float: right;
-  margin: none;
-  padding: none;
 }
