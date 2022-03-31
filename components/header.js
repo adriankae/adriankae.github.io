@@ -58,14 +58,14 @@ class Header extends HTMLElement {
       <header>
         <nav id="header-menu">
           <ul>
-              <li class="active"><a href=https://adriankae.github.io/>home.</a></li>
+              <li class="active"><a href=https://adriankaesdorf.de/>home.</a></li>
               <!-- <li><a href=#>about.</a></li>
               <li><a href=#>cv.</a></li> -->
-              <li><a href=https://adriankae.github.io/html/box_breathing.html>boxbreathing.</a></li>
+              <li><a href=https://adriankaesdorf.de/html/box_breathing.html>boxbreathing.</a></li>
               <!-- <li><a href=#>portfolio.</a></li> -->
 
-              <li><a href=https://adriankae.github.io/html/touren.html>bergtouren.</a></li>
-              <li><a href=https://adriankae.github.io/html/contact.html>contact.</a></li>
+              <li><a href=https://adriankaesdorf.de/touren>bergtouren.</a></li>
+              <li><a href=https://adriankaesdorf.de/html/contact.html>contact.</a></li>
           </ul>
         </nav>
       </header>
