@@ -62,7 +62,7 @@ h1, h2, h3{
 }
 
 .header .image{
-	max-width: 60%;
+	width: 60%;
 	float: right;
 	margin-left: auto;
 }
