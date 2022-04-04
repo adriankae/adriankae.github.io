@@ -50,11 +50,11 @@ class Footer extends HTMLElement {
 
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="https://www.youtube.com/channel/UCD5uqdFWEVQXAjGpeJdnoaQ" class="fa fa-youtube">
 
                     </a>
-                </li>
+                </li> -->
             </ul>
             <p>
                 © All rights reserved | Adrian Käsdorf
