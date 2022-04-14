@@ -61,3 +61,7 @@ try:
             print('Something probably went wrong while importing a variable.')
 except FileExistsError:
     print('The file already exists. Please choose another file name.')
+
+# add html link to touren.html
+
+# with open(path + "touren.html", 'w')
