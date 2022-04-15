@@ -45,7 +45,7 @@ def get_number_of_pictures():
 format_check()
 
 try:
-    with open(path + args.gallery_name + ".html", 'w') as f:
+    with open(path + args.gallery_name + ".html", 'x') as f:
         try:
             f.write(HEAD1)
             f.write("\t<title>" + get_gallery_name().title() + " - " + get_gallery_date() + "</title>\n")
@@ -64,4 +64,4 @@ except FileExistsError:
 
 # create section for touren.html
 
-with open(path + "touren.html", 'w')
+with open(image_path + "touren_section.html", 'x')
