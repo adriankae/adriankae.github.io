@@ -62,6 +62,6 @@ try:
 except FileExistsError:
     print('The file already exists. Please choose another file name.')
 
-# add html link to touren.html
+# create section for touren.html
 
-# with open(path + "touren.html", 'w')
+with open(path + "touren.html", 'w')
