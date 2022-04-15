@@ -31,7 +31,7 @@ except FileNotFoundError:
     print('The path \'/Users/adrian/Documents/github_pages/docs/assets/images/' + args.gallery_name + '\' used in the script cannot be found.')
     sys.exit()
 
-print("Please create a cover image within the image folder and name it " + args.gallery_name + "_cover.jpeg\n")
+print("Please create a cover image within the image folder and name it " + args.gallery_name + ".jpeg\n")
 input("Press Enter to continue...")
 
 def format_check():
