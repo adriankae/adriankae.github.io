@@ -68,23 +68,27 @@ html, body{
 
 .project-btn-grp{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    width: 300px;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: auto auto;
+    margin: center;
+    grid-gap: 10px;
 }
 
 .project-btn{
     height: 40px;
+    width: 150px;
     text-transform: capitalize;
     font-size: 18px;
     border: none;
     background: #000;
     color: #fff;
     cursor: pointer;
-    margin: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 30%;
-    margin-top: 2%;
+    /* margin: center; */
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    /* margin-left: 10%; */
+    /* margin-top: 2%; */
 }
 
 .project-btn.live{
