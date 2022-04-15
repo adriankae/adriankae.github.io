@@ -12,6 +12,7 @@
 import os
 import sys
 import argparse
+from PIL import Image
 
 # os.system('/Users/adrian/Documents/github_pages/automation/conf.py')
 
@@ -68,7 +69,7 @@ try:
         except NameError:
             print('Something probably went wrong while importing HEAD1 variable from conf.py.')
         count = get_number_of_pictures()
-        for i in range(count):
+        for i in range(1, count):
             f.write("\t\t\t\t<a href=\"https://adriankae.github.io/docs/assets/images/" + args.gallery_name + "/" + args.gallery_name + str(i) + ".jpeg\" data-lightbox=\"Heachenberg 25.02.2022\" data-title=\"\">\n")
             f.write("\t\t\t\t\t<img src=\"https://adriankae.github.io/docs/assets/images/" + args.gallery_name + "/" + args.gallery_name + str(i) + ".jpeg\">\n")
             f.write("\t\t\t\t</a>\n\n")
@@ -81,7 +82,6 @@ except FileExistsError:
     sys.exit()
 
 # create section for touren.html
-
 try:
     with open(image_path + "/touren_section.html", 'w') as f:
         try:
@@ -110,3 +110,13 @@ try:
             print('Something probably went wrong while importing TOUREN5 variable from conf.py.')
 except FileExistsError:
     print('The file for the Touren section already exists.')
+
+
+##########
+# resize cover picture
+
+cover_image = Image.open(image_path + '/' + args.gallery_name + "_cover.jpeg")
+
+cover_image = cover_image.resize(tuple(round(0.3*x) for x in cover_image.size))
+
+cover_image.save(image_path + '/' + args.gallery_name + "_cover.jpeg")
