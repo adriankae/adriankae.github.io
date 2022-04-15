@@ -88,7 +88,7 @@ try:
             f.write(TOUREN1)
         except NameError:
             print('Something probably went wrong while importing TOUREN1 variable from conf.py.')
-        f.write(args.gallery_name + "_cover.jpeg")
+        f.write(args.gallery_name + ".jpeg")
         try:
             f.write(TOUREN2)
         except NameError:
@@ -115,8 +115,8 @@ except FileExistsError:
 ##########
 # resize cover picture
 
-cover_image = Image.open(image_path + '/' + args.gallery_name + "_cover.jpeg")
+cover_image = Image.open(image_path + '/' + args.gallery_name + ".jpeg")
 
 cover_image = cover_image.resize(tuple(round(0.3*x) for x in cover_image.size))
 
-cover_image.save(image_path + '/' + args.gallery_name + "_cover.jpeg")
+cover_image.save(image_path + '/' + args.gallery_name + ".jpeg")
