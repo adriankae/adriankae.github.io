@@ -88,7 +88,7 @@ try:
             f.write(TOUREN1)
         except NameError:
             print('Something probably went wrong while importing TOUREN1 variable from conf.py.')
-        f.write(args.gallery_name + ".jpeg")
+        f.write(args.gallery_name + '/' + args.gallery_name + ".jpeg")
         try:
             f.write(TOUREN2)
         except NameError:
