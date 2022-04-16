@@ -69,10 +69,12 @@ try:
         except NameError:
             print('Something probably went wrong while importing HEAD1 variable from conf.py.')
         count = get_number_of_pictures()
+        print('there are ' + str(count) + ' pictures in the album.')
         for i in range(1, count):
             f.write("\t\t\t\t<a href=\"https://adriankae.github.io/docs/assets/images/" + args.gallery_name + "/" + args.gallery_name + str(i) + ".jpeg\" data-lightbox=\"Heachenberg 25.02.2022\" data-title=\"\">\n")
             f.write("\t\t\t\t\t<img src=\"https://adriankae.github.io/docs/assets/images/" + args.gallery_name + "/" + args.gallery_name + str(i) + ".jpeg\">\n")
             f.write("\t\t\t\t</a>\n\n")
+            print("Picture" + str(i) + ' has been created')
         try:
             f.write(BODY2)
         except NameError:
