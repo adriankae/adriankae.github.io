@@ -113,10 +113,10 @@ except FileExistsError:
 
 
 ##########
-# resize cover picture
-
-cover_image = Image.open(image_path + '/' + args.gallery_name + ".jpeg")
-
-cover_image = cover_image.resize(tuple(round(0.3*x) for x in cover_image.size))
-
-cover_image.save(image_path + '/' + args.gallery_name + ".jpeg")
+# # resize cover picture
+#
+# cover_image = Image.open(image_path + '/' + args.gallery_name + ".jpeg")
+#
+# cover_image = cover_image.resize(tuple(round(0.3*x) for x in cover_image.size))
+#
+# cover_image.save(image_path + '/' + args.gallery_name + ".jpeg")
