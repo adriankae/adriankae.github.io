@@ -12,7 +12,8 @@ class Footer extends HTMLElement {
             padding: 6em 0em;
             text-align: center;
             background: #fff;
-            position: fixed;
+            position: sticky;
+            bottom = 0;
         }
 
 
