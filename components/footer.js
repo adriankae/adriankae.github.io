@@ -9,11 +9,9 @@ class Footer extends HTMLElement {
         .copyright
         {
             overflow: hidden;
-            padding: 60em 0em;
+            padding: 6em 0em;
             text-align: center;
             background: #fff;
-            position: sticky;
-            bottom = 0;
         }
 
 
