@@ -12,6 +12,7 @@ class Header extends HTMLElement {
           align-items: center;
           justify-content: center;
           position: fixed;
+          top: 0;
         }
         */
         #header-menu{
