@@ -63,11 +63,11 @@ class Header extends HTMLElement {
               <li class="active"><a href=https://adriankaesdorf.de/>home.</a></li>
               <!-- <li><a href=#>about.</a></li>
               <li><a href=#>cv.</a></li> -->
-              <li><a href=https://adriankaesdorf.de/box_breathing.html>boxbreathing.</a></li>
+              <!-- <li><a href=https://adriankaesdorf.de/box_breathing.html>boxbreathing.</a></li> -->
               <!-- <li><a href=#>portfolio.</a></li> -->
 
               <li><a href=https://adriankaesdorf.de/touren.html>bergtouren.</a></li>
-              <li><a href=https://adriankaesdorf.de/contact.html>contact.</a></li>
+              <li><a href=https://adriankaesdorf.de/contact.html>kontakt.</a></li>
           </ul>
         </nav>
       </header>
