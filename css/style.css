@@ -1,6 +1,7 @@
 html, body{
   /* why is there this height property? The website doesn't change below 100%. Only above 100%*/
 	height: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body{
@@ -11,7 +12,7 @@ body{
   /* background color */
 	background: #FFFFFF;
   /* Define font */
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	/* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
   /* Define font size */
 	font-size: 12pt;
 }
@@ -24,6 +25,7 @@ h1, h2, h3{
   background: #FFFFFF;
 	/*color: #404040;*/
   color: #001234;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 
