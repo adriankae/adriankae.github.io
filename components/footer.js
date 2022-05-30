@@ -56,7 +56,7 @@ class Footer extends HTMLElement {
 
             </ul>
             <p>
-                © All rights reserved | Adrian Käsdorf
+                Copyright © 2022 | Adrian Käsdorf | All rights reserved
             </p>
         </div>
       </footer>
