@@ -1,4 +1,4 @@
-// import { jsPDF } from "jspdf";
+
 
 let step = document.getElementsByClassName('step');
 let prevBtn = document.getElementById('prev-btn');
@@ -107,37 +107,39 @@ dnldBtn.addEventListener('click', () => {
 });
 
 function createPdf() {
-  window.jsPDF = window.jspdf.jsPDF
-  var title = document.title;
-  var satzstamm = document.getElementById('satzstamm1').innerHTML;
-  var endung1 = document.getElementById('satzendungen1').value;
+  var docDefinition = {
+    background: function () {
+        return {
+	        canvas: [
+				{
+					type: 'rect',
+					x: 0, y: 0, w: 595.28, h: 841.89,
+					color: '#E2DED4'
+				}
+			]
+	    };
+    },
+    content: [
+      {text: document.title, alignment: 'center', style: 'title', margin: [0,10,0,30]},
+  		'First paragraph',
+  		'Another paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines',
+      {text: document.getElementById('satzstamm1').innerHTML, style: 'header', margin: [0,20,0,20]}
+      {text: document.getElementById('satzendungen1').value},
+      {text: document.getElementById('satzstamm2').innerHTML, style: 'header', margin: [0,20,0,20]}
+      //for loop?
+  	],
+    styles: {
+      title: {
+        fontSize: 22,
+        bold: true
+      },
+      header: {
+        fontSize: 16,
+        bold: true
+      }
+    }
 
-
-  // Default export is a4 paper, portrait, using millimeters for units
-  const pdf = new jsPDF("p", "mm", "a4");
-  var pageHeight = pdf.internal.pageSize.height || pdf.internal.pageSize.getHeight();
-  var pageWidth = pdf.internal.pageSize.width || pdf.internal.pageSize.getWidth();
-  console.log(satzstamm)
-  var splitSatzstamm = pdf.splitTextToSize(satzstamm, 180);
-  // pdf.setFillColor(226, 222, 212);
-  pdf.setFont("BlinkMacSystemFont")
-  pdf.setFontSize(24);
-  pdf.text(title, pageWidth / 2, 30, {align: 'center'});
-  pdf.setFontSize(16);
-  pdf.text(splitSatzstamm, 20, 50);
-  pdf.text(pdf.splitTextToSize(endung1, 180), 20, 80);
-
-  //calculate height of textarea
-  // var divHeight = document.getElementById('satzendungen1').offsetHeight;
-  console.log(pdf.autoTable.previous.finalY)
-
-  // FOOTER
-  let str = "www.adriankaesdorf.de";
-  pdf.setTextColor(100);
-  pdf.setFontSize(10);
-  pdf.text(str, pageWidth / 2, pageHeight  - 10, {align: 'center'});
-
-  pdf.save("a4.pdf");
-
+  }
+  pdfMake.createPdf(docDefinition).download();
 
 }
