@@ -3,6 +3,7 @@
 let step = document.getElementsByClassName('step');
 let prevBtn = document.getElementById('prev-btn');
 let nextBtn = document.getElementById('next-btn');
+let dnldBtn = document.getElementById('dnld-btn');
 let submitBtn = document.getElementById('submit-btn');
 let form = document.getElementsByTagName('form')[0];
 let preloader = document.getElementById('preloader-wrapper');
@@ -101,12 +102,42 @@ submitBtn.addEventListener('click', () => {
 
 });
 
-function createPdf() {
-  var title = document.getElementById('title').value;
-  var text = document.getElementById('satzstamm1').value;
-  // Default export is a4 paper, portrait, using millimeters for units
-  const doc = new jsPDF();
+dnldBtn.addEventListener('click', () => {
+    createPdf();
+});
 
-  doc.text("Hello world!", 10, 10);
-  doc.save("a4.pdf");
+function createPdf() {
+  window.jsPDF = window.jspdf.jsPDF
+  var title = document.title;
+  var satzstamm = document.getElementById('satzstamm1').innerHTML;
+  var endung1 = document.getElementById('satzendungen1').value;
+
+
+  // Default export is a4 paper, portrait, using millimeters for units
+  const pdf = new jsPDF("p", "mm", "a4");
+  var pageHeight = pdf.internal.pageSize.height || pdf.internal.pageSize.getHeight();
+  var pageWidth = pdf.internal.pageSize.width || pdf.internal.pageSize.getWidth();
+  console.log(satzstamm)
+  var splitSatzstamm = pdf.splitTextToSize(satzstamm, 180);
+  // pdf.setFillColor(226, 222, 212);
+  pdf.setFont("BlinkMacSystemFont")
+  pdf.setFontSize(24);
+  pdf.text(title, pageWidth / 2, 30, {align: 'center'});
+  pdf.setFontSize(16);
+  pdf.text(splitSatzstamm, 20, 50);
+  pdf.text(pdf.splitTextToSize(endung1, 180), 20, 80);
+
+  //calculate height of textarea
+  // var divHeight = document.getElementById('satzendungen1').offsetHeight;
+  console.log(pdf.autoTable.previous.finalY)
+
+  // FOOTER
+  let str = "www.adriankaesdorf.de";
+  pdf.setTextColor(100);
+  pdf.setFontSize(10);
+  pdf.text(str, pageWidth / 2, pageHeight  - 10, {align: 'center'});
+
+  pdf.save("a4.pdf");
+
+
 }

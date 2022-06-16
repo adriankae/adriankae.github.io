@@ -121,6 +121,7 @@ label {
 
 
 button#prev-btn,
+button#dnld-btn,
 button#next-btn,
 button#submit-btn {
     font-size: 17px;
@@ -149,6 +150,7 @@ button#submit-btn {
 
 
 button#prev-btn:after,
+button#dnld-btn:after,
 button#next-btn:after,
 button#submit-btn:after {
     position: absolute;
@@ -163,6 +165,7 @@ button#submit-btn:after {
 }
 
 button#prev-btn:hover::after,
+button#dnld-btn:hover::after,
 button#next-btn:hover::after,
 button#submit-btn:hover::after {
     transform: translateY(-80%);
@@ -453,4 +456,10 @@ input[type="radio"]:hover {
     #title-container {
         padding-top: 45px;
     }
+}
+
+
+#jspdf-wrapper {
+    background-color: blue;
+    padding: 40px;
 }
