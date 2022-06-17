@@ -107,39 +107,92 @@ dnldBtn.addEventListener('click', () => {
 });
 
 function createPdf() {
+  /*
+  creates array with stämmen and endungen.
+  then builds content:
+  first title,
+  then content from array
+  */
+
+  var contentArray = new Array();
+
+  for (let i = 1; i < 18; i++){
+    contentArray.push([
+            { text: document.getElementById('satzstamm' + i).innerHTML, style: 'header', margin: [0,20,0,20], dontBreakRows: true },
+            { style: 'tableExample',
+      			table: {
+              widths: [420, 'auto', 'auto'],
+  			       body: [[{
+                 fillColor: '#8E8D8A',
+  						   text: document.getElementById('satzendungen' + i).value,
+                 color: '#EAE7DC'
+  					   }]]
+            },
+        		layout: {
+        		    defaultBorder: false,
+        		} }
+      ]);
+  }
+
+  console.log(contentArray)
+
   var docDefinition = {
+    footer: {
+        columns: [
+      '',
+      { text: 'www.adriankaesdorf.de', alignment: 'center', margin: [0, 80, 0, 20], style: 'footer'},
+      ''
+    ]},
     background: function () {
         return {
 	        canvas: [
 				{
 					type: 'rect',
 					x: 0, y: 0, w: 595.28, h: 841.89,
-					color: '#E2DED4'
+					color: '#EAE7DC'
 				}
 			]
 	    };
     },
     content: [
-      {text: document.title, alignment: 'center', style: 'title', margin: [0,10,0,30]},
-  		'First paragraph',
-  		'Another paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines',
-      {text: document.getElementById('satzstamm1').innerHTML, style: 'header', margin: [0,20,0,20]}
-      {text: document.getElementById('satzendungen1').value},
-      {text: document.getElementById('satzstamm2').innerHTML, style: 'header', margin: [0,20,0,20]}
-      //for loop?
+      {text: document.title, alignment: 'center', style: 'title', margin: [0,0,0,0]},
+      {text: getCurrentDate(), alignment: 'center', margin: [0,10,0,30]},
+  		'Hier ist die Zusammenfassung deiner Satzendungen. Heb sie gut auf! Du kannst so deine Entwicklung mitverfolgen.',
+      contentArray
   	],
+    pageMargins: [80, 80, 80, 120],
     styles: {
       title: {
         fontSize: 22,
-        bold: true
+        bold: true,
+        color: '#E85A4F',
+        font : 'Roboto'
       },
       header: {
         fontSize: 16,
-        bold: true
+        bold: true,
+        color: '#E98074'
+      },
+      footer: {
+        fontSize: 10,
+        color: '#8E8D8A'
       }
     }
 
   }
   pdfMake.createPdf(docDefinition).download();
+
+}
+
+function getCurrentDate(){
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  let mm = today.getMonth() + 1; // Months start at 0!
+  let dd = today.getDate();
+
+  if (dd < 10) dd = '0' + dd;
+  if (mm < 10) mm = '0' + mm;
+
+  return dd + '.' + mm + '.' + yyyy;
 
 }
