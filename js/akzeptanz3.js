@@ -14,7 +14,7 @@ form.onsubmit = () => {
     return false
 }
 let current_step = 0;
-let stepCount = 17;
+let stepCount = 28;
 step[current_step].classList.add('d-block');
 if (current_step == 0) {
     prevBtn.classList.add('d-none');
@@ -28,6 +28,14 @@ const progress = (value) => {
 }
 
 nextBtn.addEventListener('click', () => {
+    console.log(document.getElementById('fakt1').value);
+    for (let i = 1; i <= 6; i++){
+      if (document.getElementById('fakt' + i).value != '') {
+        document.getElementById('satzstamm' + i + 0).innerHTML = 'Das Schwierige daran, \'' + document.getElementById('fakt' + i).value + '\' zu akzeptieren, ist...';
+        document.getElementById('satzstamm' + i + 1).innerHTML = 'Wenn ich \'' + document.getElementById('fakt' + i).value + '\' vollständig akzeptieren würde, ...';
+
+      }
+    }
     current_step++;
     let previous_step = current_step - 1;
     if ((current_step > 0) && (current_step <= stepCount)) {
