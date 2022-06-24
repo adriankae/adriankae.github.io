@@ -135,22 +135,26 @@ function createPdf() {
 
   var contentArray = new Array();
 
-  for (let i = 1; i < 14; i++){
-    contentArray.push([
-            { text: document.getElementById('satzstamm' + i).innerHTML, style: 'header', margin: [0,20,0,20], dontBreakRows: true },
-            { style: 'tableExample',
-      			table: {
-              widths: [420, 'auto', 'auto'],
-  			       body: [[{
-                 fillColor: '#8E8D8A',
-  						   text: document.getElementById('satzendungen' + i).value,
-                 color: '#EAE7DC'
-  					   }]]
-            },
-        		layout: {
-        		    defaultBorder: false,
-        		} }
-      ]);
+  for (let i = 1; i < 5; i++){
+    for (let j = 0; j < 4; j++){
+      console.log("Hello " + i + j);
+      console.log(document.getElementById('satzstamm' + i + j).innerHTML);
+      contentArray.push([
+              { text: document.getElementById('satzstamm' + i + j).innerHTML, style: 'header', margin: [0,20,0,20], dontBreakRows: true },
+              { style: 'tableExample',
+        			table: {
+                widths: [420, 'auto', 'auto'],
+    			       body: [[{
+                   fillColor: '#8E8D8A',
+    						   text: document.getElementById('satzendungen' + i + j).value,
+                   color: '#EAE7DC'
+    					   }]]
+              },
+          		layout: {
+          		    defaultBorder: false,
+          		} }
+        ]);
+      }
   }
 
   console.log(contentArray)
