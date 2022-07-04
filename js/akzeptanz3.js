@@ -36,6 +36,7 @@ nextBtn.addEventListener('click', () => {
 
       }
     }
+
     current_step++;
     let previous_step = current_step - 1;
     if ((current_step > 0) && (current_step <= stepCount)) {
