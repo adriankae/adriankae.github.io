@@ -14,7 +14,7 @@ form.onsubmit = () => {
     return false
 }
 let current_step = 0;
-let stepCount = 28;
+var stepCount = 28;
 step[current_step].classList.add('d-block');
 if (current_step == 0) {
     prevBtn.classList.add('d-none');
@@ -97,7 +97,6 @@ prevBtn.addEventListener('click', () => {
     }
     progress((100 / stepCount) * current_step);
 });
-
 
 submitBtn.addEventListener('click', () => {
     preloader.classList.add('d-block');
@@ -227,4 +226,14 @@ function getCurrentDate(){
 
   return dd + '.' + mm + '.' + yyyy;
 
+}
+
+function setStepCount(){
+  var effective_steps = 0;
+  for (let i = 1; i <= 6; i++){
+    if (document.getElementById('fakt' + i).value != '') {
+      effective_steps++;
+    }
+  }
+  stepCount = effective_steps;
 }
