@@ -64,6 +64,10 @@ nextBtn.addEventListener('click', () => {
             }
         }
     }
+
+    if (current_step == 4){
+      setStepCount();
+    }
     progress((100 / stepCount) * current_step);
 });
 
