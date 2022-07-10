@@ -145,9 +145,11 @@ function createPdf() {
           			table: {
                   widths: [420, 'auto', 'auto'],
       			       body: [[{
-                     fillColor: '#8E8D8A',
+                     fillColor: '#FFFFFF',
+                     // fillcolor: '#ffffff',
       						   text: document.getElementById('satzendungen' + i + j).value,
-                     color: '#EAE7DC'
+                     // color: '#EAE7DC'
+                     color: '#000000'
       					   }]]
                 },
             		layout: {
@@ -171,7 +173,9 @@ function createPdf() {
 				{
 					type: 'rect',
 					x: 0, y: 0, w: 595.28, h: 841.89,
-					color: '#EAE7DC'
+          // background color
+          linearGradient: ['#ac655a', '#cb705d']
+					// color: '#EAE7DC'
 				}
 			]
 	    };
@@ -187,17 +191,23 @@ function createPdf() {
       title: {
         fontSize: 22,
         bold: true,
-        color: '#022C6E',
+        // color: '#022C6E',
+        color: '#ffffff',
         font : 'Roboto'
+      },
+      content: {
+        color: '#ffffff'
       },
       header: {
         fontSize: 16,
         bold: true,
-        color: '#2832D2'
+        // color: '#2832D2'
+        color: '#ffffff'
       },
       footer: {
         fontSize: 10,
-        color: '#8E8D8A'
+        // color: '#8E8D8A'
+        color: '#ffffff'
       }
     }
 
