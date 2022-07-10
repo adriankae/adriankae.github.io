@@ -239,5 +239,5 @@ function setStepCount(){
       effective_steps++;
     }
   }
-  stepCount = effective_steps;
+  stepCount = effective_steps*4 + 4;
 }
