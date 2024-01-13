@@ -60,7 +60,7 @@ class Header extends HTMLElement {
       <header>
         <nav id="header-menu">
           <ul>
-              <li class="active"><a href=https://adriankaesdorf.de/>home.</a></li>
+              <li class="active"><a href=index.html>home.</a></li>
               <!-- <li><a href=#>about.</a></li>
               <li><a href=#>cv.</a></li> -->
               <!-- <li><a href=https://adriankaesdorf.de/box_breathing.html>boxbreathing.</a></li> -->
