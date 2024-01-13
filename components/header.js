@@ -61,13 +61,13 @@ class Header extends HTMLElement {
         <nav id="header-menu">
           <ul>
               <li class="active"><a href=index.html>home.</a></li>
-              <!-- <li><a href=#>about.</a></li>
-              <li><a href=#>cv.</a></li> -->
-              <!-- <li><a href=https://adriankaesdorf.de/box_breathing.html>boxbreathing.</a></li> -->
-              <!-- <li><a href=#>portfolio.</a></li> -->
+              <li><a href=#>about.</a></li>
+              <-- <li><a href=#>cv.</a></li> -->
+              <!-- <li><a href=./pages/box_breathing.html>boxbreathing.</a></li> -->
+              <li><a href=./pages/portfolio.index.html>portfolio.</a></li>
 
-              <li><a href=https://adriankaesdorf.de/touren.html>bergtouren.</a></li>
-              <li><a href=https://adriankaesdorf.de/contact.html>kontakt.</a></li>
+              <li><a href=./pages/touren.html>bergtouren.</a></li>
+              <li><a href=./pages/contact.html>kontakt.</a></li>
           </ul>
         </nav>
       </header>
