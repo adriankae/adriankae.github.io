@@ -1,49 +1,53 @@
-html, body{
-  /* why is there this height property? The website doesn't change below 100%. Only above 100%*/
-	height: 100%;
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+body {
+background-color: #CBDAEB;
+font-family: 'Outfit', sans-serif;
 }
 
-body{
-  /* The margin defines space around the element, outside of any defiend borders. */
-	margin: 0px;
-  /* Padding is used to create space around an element's content, inside of any defined borders. */
-	padding: 0px;
-  /* background color */
-	background: #FFFFFF;
-  /* Define font */
-	/* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
-  /* Define font size */
-	font-size: 12pt;
+.frame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
-
-/* Define properties for all headings*/
-h1, h2, h3{
-	margin: 0;
-	padding: 0;
-  background: #FFFFFF;
-	/*color: #404040;*/
-  color: #001234;
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+.card {
+	width: 320px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	border-radius: 18px;
+	align-items: center;
 }
 
-
-.header .text {
-    font-family: sans-serif;
-    font-size: 24px;
-    color: rgb(26,30,170);
-		margin-left: 30%;
+.image-container {
+	width: 288px;
+	height: 288px;
+	margin-top: 16px;
 }
 
-.header .image{
-	max-width: 50%;
-	float: right;
-	margin-left: auto;
+.image-container img {
+	max-width: 100%;
+  	max-height: 100%;
+	border-radius: 9px;
 }
 
-.header {
-  display:flex;
-  align-items:center;
-	margin-top: 80px;
+p {
+	margin-left: 28px;
+	margin-right: 28px;
+}
+
+.header-container p {
+	text-align: center;
+	font-size: 1.45rem;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.text-container p{
+	text-align: center;
+	font-weight: 400;
+	font-size: 15px;
+	margin-top: 20px;
+	color: hsl(220, 15%, 55%);
 }
