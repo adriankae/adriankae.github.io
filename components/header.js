@@ -62,7 +62,7 @@ class Header extends HTMLElement {
           <ul>
               <li class="active"><a href=index.html>home.</a></li>
               <li><a href=#>about.</a></li>
-              <-- <li><a href=#>cv.</a></li> -->
+              <!-- <li><a href=#>cv.</a></li> -->
               <!-- <li><a href=./pages/box_breathing.html>boxbreathing.</a></li> -->
               <li><a href=./pages/portfolio.index.html>portfolio.</a></li>
 
