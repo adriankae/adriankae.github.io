@@ -1,0 +1,126 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 376px;
+    height: 500px;
+    background-color: white;
+    border: black;
+    border: solid;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.content {
+    display:flex;
+    flex-direction: column;
+    width: 89%;
+    height: 92%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    border-radius: 0.8rem;
+    width: 100%;
+}
+
+.label {
+    background-color: hsl(47, 88%, 63%);
+    margin-top: 20px;
+    width: 74px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+}
+
+.label p {
+    font-weight: 800;
+    font-size: 0.75rem;
+}
+
+.publish-date p {
+    font-size: 0.75rem;
+}
+
+.heading p {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.card-text p {
+    line-height: 1.5;
+    color: hsl(0, 0%, 50%);
+}
+
+.author-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.author-container img {
+    height: 30px;
+}
+
+.author-container p {
+    font-weight: 800;
+    font-size: 0.75rem;
+}
+
+@media (min-width: 376px) {
+    .card:hover {
+        box-shadow: 14px 14px 0px 0px rgba(0, 0, 0, 1);
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 430px;
+    }
+
+    .label p {
+        font-size: 0.6rem;
+    }
+    
+    .publish-date p {
+        font-size: 0.6rem;
+    }
+
+    .heading p {
+        font-size: 1rem;
+    }
+    
+    .card-text p {
+        font-size: 0.8rem;
+    }
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
