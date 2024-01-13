@@ -41,22 +41,17 @@ class Footer extends HTMLElement {
         <div class="copyright">
             <ul id="contact">
                 <li>
-                    <a href="https://twitter.com/adriankae1" class="fa fa-twitter"></a>
+                    <a href="https://twitter.com/adrianjazzdorf" class="fa fa-twitter"></a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/käsdorf" class="fa fa-linkedin">
 
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCAvLk6PxSQpaXetA7ZCIqAQ" class="fa fa-youtube">
-
-                    </a>
-                </li>
 
             </ul>
             <p>
-                <center>Copyright © 2022 | Adrian Käsdorf | All rights reserved</center>
+                <center>Copyright © 2024 | Adrian Käsdorf | All rights reserved</center>
             </p>
         </div>
       </footer>
