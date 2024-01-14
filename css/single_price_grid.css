@@ -1,0 +1,136 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #DFEBE3;
+}
+
+main {
+    margin-bottom: 18px;
+    height: 100vh;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+}
+
+.action-container {
+    background-color: #ffffff;
+}
+
+.action-header p {
+    color: #27A5A2;
+}
+
+.action-subheader p {
+    color: #B4DC26;
+}
+
+.price-header p{
+    color: hsl(204, 43%, 93%);
+    font-size: 20px;
+}
+
+.price-frame {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.price p {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: hsl(204, 43%, 93%);
+}
+
+.billing p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #5bd5d1;
+}
+
+.price-container .price-subtitle p {
+    margin-top: 8px;
+    color: #c3ffff;
+}
+
+button {
+    width: 260px;
+    height: 48px;
+    margin-top: 18px;
+    background-color: #b4dc26;
+    border: none;
+    color: #ffffb5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.about-container {
+    background-color: #3eb3af;
+    padding: 5px 25px 10px 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.about-heading {
+    color: hsl(204, 43%, 93%);
+    font-size: 20px;
+}
+
+.about-text {
+    color: #c3ffff;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 943px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+        max-width: 310px;
+    }    
+
+    .action-container {
+        padding: 10px 25px 15px 25px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;;
+    }
+
+    .action-header p{
+        font-size: 20px;
+    }
+
+
+
+    .action-subheader p {
+        font-size: 16px;
+    }
+
+    .action-text p {
+        font-size: 13px;
+        line-height: 2;
+        color: hsl(218, 22%, 67%);
+    }
+
+    .price-container {
+        background-color: #27A5A2;
+        padding: 10px 25px 15px 25px;
+    }
+
+}
+
+@media screen and (min-width: 944px) {
+    .grid-container {
+        display: grid;
+    }    
+}
+
+
