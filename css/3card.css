@@ -1,4 +1,115 @@
 body {
-    font-family: 'Big Shoulders Display', sans-serif;
     font-family: 'Lexend Deca', sans-serif;
+    background-color: #EFEFEF;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	min-height: 100vh;
+    margin-bottom: 1rem;
+}
+
+.card-container {
+    display: flex;
+}
+
+.outer-card-frame1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.outer-card-frame2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.outer-card-frame3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.header-container p{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 32px;
+    color: hsl(0, 0%, 95%);
+}
+
+.content-container p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+
+button {
+    height: 48px;
+    width: 146px;
+    border: none;
+    border-radius: 24px;
+}
+
+.button1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.button2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button3 {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    border: solid;
+    border-color: #EFEFEF;
+    color: #efefef;
+}
+
+.button1:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.button2:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.button3:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 375px) {
+    .card-container {
+        flex-direction: column;
+        /* width: 328px;
+        max-width: 328px;
+        min-width: 328px; */
+    }
+
+    .outer-card-frame {
+        width: 328px;
+        min-width: 328px;
+        max-height: 442px;
+        min-height: 442px;
+    }
+
+    .card {
+        
+        padding: 50px
+    }
+
+    .outer-card-frame1 {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .outer-card-frame3 {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    button {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    
 }
