@@ -27,6 +27,10 @@ body {
     background-color: hsl(179, 100%, 13%);
 }
 
+.card {
+    padding: 50px
+}
+
 .header-container p{
     font-family: 'Big Shoulders Display', sans-serif;
     font-size: 32px;
@@ -36,6 +40,7 @@ body {
 .content-container p {
     color: hsla(0, 0%, 100%, 0.75);
     line-height: 1.5;
+    font-size: 15px;
 }
 
 button {
@@ -75,12 +80,11 @@ button:hover {
     background-color: hsl(179, 100%, 13%);
 }
 
-@media screen and (max-width: 375px) {
+
+
+@media screen and (max-width: 943px) {
     .card-container {
         flex-direction: column;
-        /* width: 328px;
-        max-width: 328px;
-        min-width: 328px; */
     }
 
     .outer-card-frame {
@@ -88,11 +92,6 @@ button:hover {
         min-width: 328px;
         max-height: 442px;
         min-height: 442px;
-    }
-
-    .card {
-        
-        padding: 50px
     }
 
     .outer-card-frame1 {
@@ -110,6 +109,25 @@ button:hover {
     }
 }
 
-@media screen and (min-width: 376px) {
-    
+@media screen and (min-width: 944px) {
+    .outer-card-frame {
+        width: 306px;
+        min-width: 306px;
+        height: 500px;
+        min-height: 500px;
+    }
+
+    .outer-card-frame1 {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .outer-card-frame3 {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    button {
+        margin-top: 80px;
+    }
 }
