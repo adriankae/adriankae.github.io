@@ -1,0 +1,97 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #cdd8ff;
+}
+
+.frame {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex: 1; */
+    /* height: 100%; */
+    padding: 25px
+}
+
+.order-container {
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    background-color: #f6f7fe;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.product-detail-container p {
+    margin: 0;
+}
+
+.plan-type p {
+    font-weight: 700;
+}
+
+.price p {
+    color: 
+}
+
+
+
+@media screen and (max-width: 943px) {
+    .card {
+        width: 328px;
+        max-width: 328px;
+        height: 566px;
+        
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .image-container img {
+        width: 328px;
+        max-width: 328px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .order-header p {
+        font-weight: 900;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .order-text p {
+        line-height: 1.75;
+        text-align: center;
+        color: hsl(224, 23%, 55%);
+    }
+
+    .order-container img{
+        height: 100%;
+        padding-right: 20px
+    }
+}
+
+@media screen and (min-width: 944px) {
+    .frame {
+        background-image: url('../assets/order-summary-assets/pattern-background-mobile.svg');
+        background-position: center;
+        background-size: cover;
+        width: 375px;
+    }
+}
