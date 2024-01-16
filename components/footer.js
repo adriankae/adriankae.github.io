@@ -6,33 +6,36 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <style>
-        .copyright
-        {
+        .copyright {
+            display: flex; /* Flex container */
+            flex-direction: column; /* Children are stacked vertically */
+            justify-content: center; /* Center children vertically */
+            align-items: center; /* Center children horizontally */
             overflow: hidden;
             padding: 6em 0em;
             text-align: center;
             background: #fff;
         }
 
-
-        .copyright p
-        {
+        .copyright p {
             letter-spacing: 1px;
             font-size: 0.90em;
             color: #000;
         }
 
-        #contact li{
-          display: inline-block;
-          text-align: center;
-          margin: auto;
-          background: #fff;
-          padding: 0em 0.3em;
+        #contact {
+            list-style-type: none; /* Removes bullet points */
+            padding: 0; /* Removes default padding */
+            display: flex; /* Flex container */
+            justify-content: center; /* Center items horizontally */
         }
 
+        #contact li {
+            display: inline-block;
+            margin: 0 0.3em; /* Adjusted for better spacing */
+        }
 
-        .copyright a
-        {
+        .copyright a {
             text-decoration: none;
             color: #000;
         }
@@ -44,15 +47,10 @@ class Footer extends HTMLElement {
                     <a href="https://twitter.com/adrianjazzdorf" class="fa fa-twitter"></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/käsdorf" class="fa fa-linkedin">
-
-                    </a>
+                    <a href="https://www.linkedin.com/in/käsdorf" class="fa fa-linkedin"></a>
                 </li>
-
             </ul>
-            <p>
-                <center>Copyright © 2024 | Adrian Käsdorf | All rights reserved</center>
-            </p>
+            <p>Copyright © 2024 | Adrian Käsdorf | All rights reserved</p>
         </div>
       </footer>
     `;
