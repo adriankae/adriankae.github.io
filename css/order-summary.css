@@ -1,6 +1,6 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
-    background-color: #cdd8ff;
+    background-color: #e2e9fd;
 }
 
 .frame {
@@ -19,6 +19,8 @@ body {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    box-shadow: 0px 22px 41px rgba(0, 0, 0, 0.15);
 }
 
 .image-container img {
@@ -169,6 +171,8 @@ button {
         max-height: 696px;
     }
 
+
+
     .order-header p {
         margin-top: 40px; 
         font-size: 1.5rem;;
@@ -176,6 +180,14 @@ button {
 
     .summary-container {
         padding: 0px 50px;
+    }
+
+    .order-container {
+        margin-top: 25px;
+    }
+
+    .order-text {
+        margin-top: 20px;
     }
 
     .link-container a {

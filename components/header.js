@@ -1,78 +1,81 @@
-class Header extends HTMLElement {
+class HeaderComponent extends HTMLElement {
   constructor() {
-    super();
-  }
+      super();
+      this.attachShadow({ mode: 'open' });
 
-  connectedCallback() {
-    this.innerHTML = `
-      <style>
-        /* nav {
-          height: 80px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: fixed;
-          top: 0;
-        }
-        */
-        #header-menu{
-        	float: center;
-          font-size: 12pt;
-        	/* width: 70%;
-        	height: 100%; */
-        	margin: auto;
-        }
+      // Style for the component, including sticky header
+      const style = document.createElement('style');
+      style.textContent = `
+          /* Styles for your sticky header component */
+          header {
+              position: sticky;
+              top: 0;
+              z-index: 1000; /* Ensure the header is above other content */
+              background-color: #fff; /* Background color, can be adjusted */
+              /* Add other styles for your header here */
+          }
 
-        #header-menu ul{
-        	text-align: center;
-        	float: center;
-        	margin: none;
-        	background: #FFFFFF;
-        }
+          #header-menu {
+            float: center;
+            font-size: 12pt;
+            /* width: 70%;
+            height: 100%; */
+            margin: auto;
+          }
 
-        #header-menu li{
-        	display: inline-block;
-        	padding: none;
-        	margin: none;
-        }
+          #header-menu ul {
+            text-align: center;
+            float: center;
+            margin: none;
+            background: #FFFFFF;
+          }
 
-        #header-menu li a, #header-menu li span{
-        	display: inline-block;
-        	padding: 0em 1.5em;
-        	text-decoration: none;
-        	font-weight: 600;
-        	text-transform: lowercase;
-        	line-height: 60px;
-        }
+          #header-menu li {
+            display: inline-block;
+            padding: none;
+            margin: none;
+          }
 
-        #header-menu li a{
+          #header-menu li a, #header-menu li span{
+            display: inline-block;
+            padding: 0em 1.5em;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: lowercase;
+            line-height: 60px;
+          }
 
-        	color: #000000;
-        }
+          #header-menu li a{
 
-        #header-menu li:hover a, #header-menu li span{
-        	background: #FFF;
-        	color: #333333;
-        	text-decoration: none;
-        }
+            color: #000000;
+          }
+  
+          #header-menu li:hover a, #header-menu li span{
+            background: #FFF;
+            color: #333333;
+            text-decoration: none;
+          }
+      `;
 
-      </style>
-      <header>
-        <nav id="header-menu">
-          <ul>
-              <li class="active"><a href=https://adriankae.github.io/>home.</a></li>
-              <li><a href=https://adriankae.github.io/>about.</a></li>
-              <!-- <li><a href=#>cv.</a></li> -->
-              <!-- <li><a href=./box_breathing.html>boxbreathing.</a></li> -->
-              <li><a href=https://adriankae.github.io/pages/portfolio.html>portfolio.</a></li>
+      // HTML structure for the component
+      const html = document.createElement('div');
+      html.innerHTML = `
+          <header>
+              <nav id="header-menu">
+                  <ul>
+                      <li class="active"><a href="https://adriankae.github.io/">home.</a></li>
+                      <li><a href="https://adriankae.github.io/">about.</a></li>
+                      <li><a href="https://adriankae.github.io/pages/portfolio.html">portfolio.</a></li>
+                      <li><a href="https://adriankae.github.io/contact.html">contact.</a></li>
+                  </ul>
+              </nav>
+          </header>
+      `;
 
-              <!-- <li><a href=./pages/touren.html>bergtouren.</a></li> -->
-              <li><a href=https://adriankae.github.io//contact.html>contact.</a></li>
-          </ul>
-        </nav>
-      </header>
-    `;
+      // Append the style and HTML to the shadow root
+      this.shadowRoot.append(style, html);
   }
 }
 
-customElements.define('header-component', Header);
+// Define the custom element
+customElements.define('header-component', HeaderComponent);
