@@ -159,12 +159,14 @@ button {
         background-image: url('../assets/order-summary-assets/pattern-background-desktop.svg');
         background-position: center top;
         background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .card {
         width: 450px;
         max-width: 450px;
         height: 696px;
+        max-height: 696px;
     }
 
     .order-header p {
