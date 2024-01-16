@@ -6,51 +6,52 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <style>
-        .copyright {
-            display: flex; /* Flex container */
-            flex-direction: column; /* Children are stacked vertically */
-            justify-content: center; /* Center children vertically */
-            align-items: center; /* Center children horizontally */
-            overflow: hidden;
-            padding: 6em 0em;
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            padding: 6em 0em;
             background: #fff;
         }
 
-        .copyright p {
-            letter-spacing: 1px;
-            font-size: 0.90em;
-            color: #000;
-        }
-
         #contact {
-            list-style-type: none; /* Removes bullet points */
-            padding: 0; /* Removes default padding */
-            display: flex; /* Flex container */
-            justify-content: center; /* Center items horizontally */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
 
         #contact li {
-            display: inline-block;
-            margin: 0 0.3em; /* Adjusted for better spacing */
+            margin: 0 0.3em;
         }
 
-        .copyright a {
+        #contact li a {
             text-decoration: none;
             color: #000;
+            display: block;
+        }
+
+        #contact li a:hover, #contact li a:focus {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        p {
+            letter-spacing: 1px;
+            font-size: 0.90em;
+            color: #000;
+            margin: 0;
         }
       </style>
       <footer>
-        <div class="copyright">
-            <ul id="contact">
-                <li>
-                    <a href="https://twitter.com/adrianjazzdorf" class="fa fa-twitter"></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/käsdorf" class="fa fa-linkedin"></a>
-                </li>
-            </ul>
-            <p>Copyright © 2024 | Adrian Käsdorf | All rights reserved</p>
+        <div>
+          <ul id="contact">
+            <li><a href="https://twitter.com/adrianjazzdorf" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.linkedin.com/in/käsdorf" class="fa fa-linkedin"></a></li>
+          </ul>
+          <p>Copyright © 2024 | Adrian Käsdorf | All rights reserved</p>
         </div>
       </footer>
     `;
