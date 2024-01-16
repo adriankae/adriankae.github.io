@@ -11,14 +11,14 @@ class Footer extends HTMLElement {
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 6em 0em;
+            padding: 3em 0em;
             background: #fff;
         }
 
         #contact {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 0 0 1rem 0;
             display: flex;
             justify-content: center;
         }
