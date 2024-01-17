@@ -88,7 +88,6 @@ button {
 
 .about-container {
     background-color: #3eb3af;
-    /* padding: 5px 25px 10px 25px; */
 }
 
 .about-heading {
@@ -164,6 +163,7 @@ ul {
 
     ul {
         font-size: 13px;
+        margin-top: 10px
     }
 
     .price-container {
@@ -176,6 +176,14 @@ ul {
 
     button {
         margin-top: 25px;
+    }
+
+    .about-container {
+        height: 228px;
+    }
+
+    .about-heading p {
+        color: white;
     }
 }
 
