@@ -79,7 +79,6 @@ main {
 }
 
 button {
-    width: 260px;
     height: 48px;
     background-color: #b4dc26;
     border: none;
@@ -121,6 +120,11 @@ ul {
 
 .about-heading p {
     color: white;
+    font-weight: 700;
+}
+
+.price-header {
+    font-weight: 700;
 }
 
 @media screen and (max-width: 943px) {
@@ -180,11 +184,16 @@ ul {
     }
 
     button {
+        width: 260px;
         margin-top: 25px;
     }
 
     .about-container {
         height: 228px;
+    }
+
+    .billing p {
+        margin-left: 10px;
     }
 }
 
@@ -221,10 +230,29 @@ ul {
 
     .price-container {
         border-bottom-left-radius: 10px;
+        padding: 45px 40px 0px 40px; 
+    }
+
+    .price-frame {
+        margin-top: 10px;
+    }
+
+    .billing {
+        margin-left: 10px;
+    }
+
+    .price-subtitle {
+        font-size: 15px;
+    }
+
+    button {
+        margin-top: 25px;
+        width: 236px;
     }
 
     .about-container {
         border-bottom-right-radius: 10px;
+        padding: 45px 40px 0px 40px; 
     }
 }
 
