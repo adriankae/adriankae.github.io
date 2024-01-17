@@ -55,14 +55,13 @@ main {
     display: flex;
 }
 
-.card h1 {
+.stats-card h1 {
     color: white;
     font-weight: 700;
-    font-size: 28px; 
-
+    font-family: 'Inter', sans-serif;
 }
 
-.card p {
+.stats-card p {
     color: var(--slightly-transparent-white);
     font-size: 13px; 
     font-family: 'Inter', sans-serif;
@@ -84,17 +83,18 @@ h2 {
 }
 
 @media screen and (max-width: 943px) {
-    .card {
+    .stats-card {
         transform: scale(0.75);
         width: 328px;
         height: 780px;
+        flex-direction: column;
     }
 
     h1 {
         text-align: center;
     }
 
-    .card p {
+    .stats-card p {
         margin-top: 20px;
         text-align: center;
 
@@ -137,9 +137,13 @@ h2 {
         font-size: 20px;
     }
 
-    .stats-container {
+    .stats-card {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
+    }
+
+    .stats-card h1 {
+        font-size: 28px; 
     }
 }
 
@@ -165,5 +169,32 @@ h2 {
         border-top-right-radius: 8px;
     }
 
+    .stats-card {
+        width: 1110px;
+        max-width: 1110px;
+        height: 446px;
+        max-height: 446px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+
+    .stats-container {
+        padding: 80px 120px 64px 70px;
+    }
+
+    .stats-card h1 {
+        font-size: 32px;
+    }
+
+    .stats-card p {
+        margin-top: 38px;
+    }
+
+    .stats-subcontainer {
+        justify-content: space-between;
+        padding-right: 40px;
+    }
     
 }
