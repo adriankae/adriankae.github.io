@@ -39,6 +39,18 @@ body {
     display: flex;
 }
 
+.card1 {
+    padding: 50px
+}
+
+.header-container {
+    margin-top: 30px; 
+}
+
+.content-container {
+    margin-top: 30px;
+}
+
 .outer-card-frame1 {
     background-color: hsl(31, 77%, 52%);
 }
@@ -59,8 +71,8 @@ body {
 
 .content-container p {
     color: hsla(0, 0%, 100%, 0.75);
-    line-height: 1.5;
-    font-size: 15px;
+    line-height: 1.75;
+    font-size: 13px;
 }
 
 button {
@@ -114,23 +126,6 @@ button:hover {
         min-height: 442px;
     }
 
-    .card1 {
-        padding: 50px
-    }
-
-    .header-container {
-        margin-top: 30px; 
-    }
-
-    .content-container {
-        margin-top: 30px;
-    }
-
-    .content-container p {
-        font-size: 13px;
-        line-height: 1.75;
-    }
-
     .outer-card-frame1 {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -167,5 +162,6 @@ button:hover {
 
     button {
         margin-top: 80px;
+        font-size: 15px;
     }
 }
