@@ -1,3 +1,27 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
 body {
     background-color: hsl(47, 88%, 63%);
     font-family: 'Figtree', sans-serif;
@@ -10,7 +34,7 @@ body {
     height: 100vh;
 }
 
-.card {
+.card1 {
     width: 100%;
     max-width: 376px;
     height: 500px;
@@ -24,11 +48,11 @@ body {
     box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
 }
 
-.content {
+.content1 {
     display:flex;
     flex-direction: column;
-    width: 89%;
-    height: 92%;
+    width: 100%;
+    height: 100%;
 }
 
 .image-container {
@@ -41,9 +65,9 @@ body {
     width: 100%;
 }
 
-.label {
+.label1 {
     background-color: hsl(47, 88%, 63%);
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 74px;
     height: 30px;
     display: flex;
@@ -52,7 +76,7 @@ body {
     border-radius: 0.25rem;
 }
 
-.label p {
+.label1 p {
     font-weight: 800;
     font-size: 0.75rem;
 }
@@ -61,7 +85,7 @@ body {
     font-size: 0.75rem;
 }
 
-.heading p {
+.heading1 p {
     font-weight: 800;
     font-size: 1.5rem;
     margin-top: 4px;
@@ -88,39 +112,64 @@ body {
     font-size: 0.75rem;
 }
 
-@media (min-width: 376px) {
-    .card:hover {
+@media (min-width: 944px) {
+    .card1:hover {
         box-shadow: 14px 14px 0px 0px rgba(0, 0, 0, 1);
     }
 }
 
-@media (max-width: 375px) {
-    .card {
+@media (max-width: 943px) {
+    .card1 {
         margin-left: 20px;
         margin-right: 20px;
-        height: 430px;
+        height: 500px;
+        width: 326px;
     }
 
-    .label p {
-        font-size: 0.6rem;
+    .image-container img {
+        margin-top: 25px;
+        width: 278px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .label1 {
+        margin-top: 25px;;
+        margin-left: 25px;
+    }
+
+    .label1 p {
+        font-size: 11px;
     }
     
     .publish-date p {
-        font-size: 0.6rem;
+        margin-top: 16px;
+        margin-left: 25px;
+        font-size: 11px;
     }
 
-    .heading p {
-        font-size: 1rem;
+    .heading1 {
+        margin-left: 25px;
+        margin-top: 16px;
+    }
+
+    .heading1 p {
+        font-size: 18px;
+        
     }
     
-    .card-text p {
-        font-size: 0.8rem;
+    .card-text {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin: 16px 25px 0 25px;
     }
-}
 
-.attribution {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    .card-text p {
+        font-size: 11.5px;
+    }
+
+    .author-container {
+        margin-left: 25px;
+        margin-top: 16px;
+    }
 }
