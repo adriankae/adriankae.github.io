@@ -133,8 +133,12 @@ ul {
         border-top-right-radius: 5px;;
     }
 
-    .action-container, .price-container, .about-container {
+    .action-container, .price-container {
         padding: 30px 25px 15px 25px;
+    }
+
+    .about-container {
+        padding: 25px  25px 15px 25px;
     }
 
     .action-header {
