@@ -35,9 +35,6 @@ body {
 }
 
 .card1 {
-    width: 100%;
-    max-width: 376px;
-    height: 500px;
     background-color: white;
     border: black;
     border: solid;
@@ -62,7 +59,6 @@ body {
 
 .image-container img {
     border-radius: 0.8rem;
-    width: 100%;
 }
 
 .label1 {
@@ -113,6 +109,61 @@ body {
 }
 
 @media (min-width: 944px) {
+    .card1 {
+        width: 376px;;
+        max-width: 376px;
+        height: 500px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .image-container{
+        margin: 22px 23px 0 23px;
+    }
+
+    .image-container img {  
+        object-fit: cover;
+    }
+
+    .label1 {
+        margin-top: 25px;;
+        margin-left: 23px;
+    }
+
+    .label1 p {
+        font-size: 11px;
+    }
+
+    .publish-date p {
+        margin-top: 16px;
+        margin-left: 23px; 
+        font-size: 11px;
+    }
+
+    .heading1 {
+        margin-left: 23px;
+        margin-top: 12px;  
+    }
+
+    .heading1 p {
+        font-size: 18px;
+    }
+
+    .card-text {
+        margin-left: 23px;
+        margin-right: 23px;
+        margin: 16px 25px 0 25px;
+    }
+
+    .card-text p {
+        font-size: 13px;
+    }
+
+    .author-container {
+        margin-left: 23px; 
+        margin-top: 16px;
+    }
+
     .card1:hover {
         box-shadow: 14px 14px 0px 0px rgba(0, 0, 0, 1);
     }
@@ -155,7 +206,6 @@ body {
 
     .heading1 p {
         font-size: 18px;
-        
     }
     
     .card-text {
