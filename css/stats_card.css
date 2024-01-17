@@ -170,7 +170,7 @@ h2 {
     }
 
     .stats-card {
-        width: 1110px;
+        min-width: 1110px;
         max-width: 1110px;
         height: 446px;
         max-height: 446px;
