@@ -164,7 +164,7 @@ h2 {
         height: 446px;
         width: 540px;
         z-index: 2;
-        background-color: hsla(277, 64%, 61%, 0.6);
+        background-color: hsla(277, 64%, 61%, 0.7);
         border-bottom-right-radius: 8px;
         border-top-right-radius: 8px;
     }
@@ -195,6 +195,13 @@ h2 {
     .stats-subcontainer {
         justify-content: space-between;
         padding-right: 40px;
+        margin-top: 20px;
+    }
+
+    .stats-subcontainer p {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
     }
     
 }
