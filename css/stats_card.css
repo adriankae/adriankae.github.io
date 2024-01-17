@@ -22,14 +22,14 @@
     isolation: isolate;
   }
 
-/* Root variables for color values */
+
 :root {
-    /* Primary */
+
     --very-dark-blue: hsl(233, 47%, 7%);
     --dark-desaturated-blue: hsl(244, 38%, 16%);
     --soft-violet: hsl(277, 64%, 61%);
 
-    /* Neutral */
+
     --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
     --slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
 }
@@ -50,8 +50,9 @@ main {
     align-items: center;
 }
 
-.card {
+.stats-card {
     background-color: var(--dark-desaturated-blue);
+    display: flex;
 }
 
 .card h1 {
@@ -140,4 +141,29 @@ h2 {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
+}
+
+@media screen and (min-width: 944px) {
+    .img-container{
+        height: 446px;
+        width: 540px;
+        background-image: url('../assets/stats_card_assets/image-header-desktop.jpg');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: white;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .veil {
+        height: 446px;
+        width: 540px;
+        z-index: 2;
+        background-color: hsla(277, 64%, 61%, 0.6);
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    
 }
