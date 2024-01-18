@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-size: 14px;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif; */
+
+:root {
+
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+}
+
+body {
+    background-color: var(--cream);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 943px) {
+    main {
+        height: 100vh;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-container {
+        width: 342px;
+        height: 612px;
+        background-color: white;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    
+    .image-container {
+        background-image: url('../assets/product-card-assets/image-product-mobile.jpg');
+        width: 342px;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .content-container {
+        padding: 27px 18px 25px 25px; 
+    }
+
+    h2 {
+        font-size: 0.7rem;
+        color: var(--dark-grayish-blue);
+        letter-spacing: 0.25rem;
+    }
+
+    h1 {
+        font-family: 'Fraunces', serif;
+        font-size: 2rem;
+    }
+
+    section > p {
+        color: var(--dark-grayish-blue);
+        line-height: 1.5;
+    }
+
+    .price-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .price-container p {
+        font-size: 2rem;
+        font-family: 'Fraunces', serif;
+        color: var(--dark-cyan);
+    }
+
+    .price-container s {
+        color: var(--dark-grayish-blue);
+    }
+
+    button {
+        border: none;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: var(--dark-cyan);
+        margin-top: 15px;
+        width: 294px;
+        height: 48px;
+        font-weight: 700;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 944px) {
+    
+}
